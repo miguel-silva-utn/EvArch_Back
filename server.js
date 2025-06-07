@@ -19,3 +19,8 @@ app.get('/', (req, res) => {
 
 // Exporta como función para Vercel:
 export default app;
+
+// Verifica que el servidor responde en server.js:
+app.get('/api/ping', (req, res) => {
+    res.send('Servidor activo desde Vercel');
+});
